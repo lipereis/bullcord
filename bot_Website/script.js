@@ -1,37 +1,30 @@
-// script.js
 document.addEventListener("DOMContentLoaded", () => {
   // Navegação Suave
   document.querySelectorAll("nav ul li a").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       const href = link.getAttribute("href");
-      document.querySelector(href).scrollIntoView({ behavior: "smooth" }) ||
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" }) ||
         (window.location.href = href);
     });
   });
 
-  // Formulário de Contato (para support.html)
+  // Formulário de Contato
   const form = document.querySelector("#support-form");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      const [name, email, message] = [
-        form.querySelector("#name"),
-        form.querySelector("#email"),
-        form.querySelector("#message"),
-      ].map((input) => input.value);
+      const [name, email, message] = ["name", "email", "message"].map(
+        (id) => form.querySelector(`#${id}`).value
+      );
       if (name && email && message) {
-        const mailto = `mailto:suporte@bullcord.com?subject=Suporte - ${name}&body=${message}%0D%0AEnviado por: ${email}`;
-        window.location.href = mailto;
-        alert("E-mail enviado! Verifique seu cliente de e-mail.");
+        window.location.href = `mailto:suporte@bullcord.com?subject=Suporte - ${name}&body=${message}%0D%0AEnviado por: ${email}`;
         form.reset();
-      } else {
-        alert("Preencha todos os campos!");
-      }
+      } else alert("Preencha todos os campos!");
     });
   }
 
-  // Efeito de Carregamento
+  // Loader
   const loader = document.createElement("div");
   loader.id = "loader";
   loader.innerHTML = '<div class="spinner"></div>';
