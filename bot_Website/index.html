@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bullcord - Home</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -20,27 +22,43 @@
     </ul>
   </nav>
 
-
-  <header>
-    <h1>Bem-vindo ao Bullcord!</h1>
-    <p>Seu assistente virtual para acompanhar ETFs no Discord.</p>
+  <header class="hero">
+    <h1>Domine o Mercado com o Bullcord</h1>
+    <p>Seu assistente definitivo para ETFs no Discord, com dados em tempo real e alertas personalizados.</p>
+    <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID&permissions=8&scope=bot" class="invite-button hero-cta" target="_blank">Adicione Agora</a>
   </header>
 
+
+
   <section class="content">
-    <h2>Sobre o Bullcord</h2>
-    <p>O Bullcord é uma ferramenta desenvolvida para ajudar usuários a monitorar e analisar Exchange-Traded Funds (ETFs) diretamente no Discord. Com recursos como preços em tempo real, gráficos e alertas, ele é ideal para investidores e entusiastas do mercado financeiro.</p>
-    <p>O bot utiliza dados do Yahoo Finance para fornecer informações precisas e atualizadas.</p>
+    <h2>Recursos Poderosos</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Preços em Tempo Real</h3>
+        <p>Obtenha preços atualizados e variações com <code>!preco SPY</code>.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Gráficos Interativos</h3>
+        <p>Visualize tendências com <code>!chart SPY 1y</code>.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Alertas Inteligentes</h3>
+        <p>Configure alertas com <code>!alerta SPY 540</code>.</p>
+      </div>
+    </div>
+
+    <h2>Por que Bullcord?</h2>
+    <p class="highlight-text"> O Bullcord usa dados do Yahoo Finance para oferecer precisão e simplicidade. Junte-se a uma comunidade de investidores que confiam em nossas ferramentas para tomar decisões informadas.</p>
+
+    <div class="stats-section">
+      <h2>Estatísticas</h2>
+      <p id="visit-count"></p>
+    </div>
   </section>
-
-
 
   <footer>
     <p>&copy; 2025 Bullcord - Todos os direitos reservados.</p>
   </footer>
-
-
-
-
 </body>
 
 </html>

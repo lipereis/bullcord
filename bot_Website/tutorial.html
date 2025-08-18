@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-
-
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bullcord - Tutorial</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -24,73 +22,56 @@
     </ul>
   </nav>
 
-  <header>
-    <h1>Tutorial - Adicione o Bullcord ao Seu Discord</h1>
-    <p>Siga os passos abaixo para adicionar o Bullcord ao seu servidor Discord e começar a usá-lo.</p>
+  <header class="hero">
+    <h1>Guia do Bullcord</h1>
   </header>
 
   <section class="content">
     <h2>Como Adicionar o Bullcord ao Seu Servidor</h2>
-    <p>O Bullcord é um bot desenvolvido para fornecer informações sobre ETFs diretamente no Discord. Para adicioná-lo ao seu servidor, siga este guia simples:</p>
-
     <ol>
       <li><strong>Obtenha o Link de Convite</strong>
         <ul>
-          <li>Peça ao administrador do Bullcord o link de convite oficial. Este link é gerado usando o <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a>.</li>
-          <li>O link geralmente parece com: <code>https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID&permissions=8&scope=bot</code> (substitua `SEU_CLIENT_ID` pelo ID do bot).</li>
-          <li><strong>Nota:</strong> Se você não tem o link, entre em contato com o suporte (veja a página de <a href="support.html">Suporte</a>).</li>
+          <li>Peça ao administrador o link oficial no <a href="https://discord.com/developers/applications" target="_blank">Discord Developer Portal</a>.</li>
+          <li>Exemplo: <code>https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID&permissions=8&scope=bot</code>.</li>
+          <li>Entre em <a href="support.html">Suporte</a> se não tiver o link.</li>
         </ul>
       </li>
       <li><strong>Conecte-se ao Discord</strong>
         <ul>
-          <li>Clique no link de convite fornecido. Isso abrirá uma página de autorização do Discord.</li>
-          <li>Faça login na sua conta do Discord, se necessário.</li>
+          <li>Clique no link e faça login, se necessário.</li>
         </ul>
       </li>
       <li><strong>Selecione o Servidor</strong>
         <ul>
-          <li>Escolha o servidor onde deseja adicionar o Bullcord na lista suspensa.</li>
-          <li>Certifique-se de que você tem permissões de administrador ou gerenciador de bot no servidor.</li>
+          <li>Escolha seu servidor e confirme permissões de administrador.</li>
         </ul>
       </li>
       <li><strong>Autorize o Bot</strong>
         <ul>
-          <li>Clique em "Autorizar" para conceder as permissões necessárias ao bot (ex.: enviar mensagens, criar embeds).</li>
-          <li>Complete o captcha, se solicitado, para verificar que você não é um robô.</li>
+          <li>Clique em "Autorizar" e complete o captcha.</li>
         </ul>
       </li>
-      <li><strong>Configure o Bot no Servidor</strong>
+      <li><strong>Configure o Bot</strong>
         <ul>
-          <li>Depois de autorizado, o Bullcord aparecerá na lista de membros do seu servidor.</li>
-          <li>Crie um canal de texto (ex.: #etf-info) onde o bot terá permissão para enviar mensagens.</li>
-          <li>Use os comandos (ex.: <code>!preco SPY</code>) para testar o bot.</li>
+          <li>Crie um canal (ex.: #etf-info) e teste com <code>!preco SPY</code>.</li>
         </ul>
       </li>
-      <li><strong>Permissões Recomendadas</strong>
+      <li><strong>Permissões</strong>
         <ul>
-          <li><strong>Send Messages</strong>: Para o bot responder aos comandos.</li>
-          <li><strong>Embed Links</strong>: Para exibir embeds com informações e gráficos.</li>
-          <li><strong>Attach Files</strong>: Para enviar imagens de gráficos.</li>
-          <li><strong>Read Message History</strong>: Para entender o contexto dos comandos.</li>
+          <li>Send Messages, Embed Links, Attach Files, Read Message History.</li>
         </ul>
       </li>
     </ol>
-
-    <h2>Dicas Úteis</h2>
+    <h2>Dicas</h2>
     <ul>
-      <li>Se o bot não responder, verifique se ele está online (o status deve ser verde) e se as permissões estão corretas.</li>
-      <li>Use o comando <code>!help</code> no servidor para ver a lista de comandos disponíveis.</li>
+      <li>Verifique se o bot está online (status verde).</li>
+      <li>Use <code>!help</code> para comandos.</li>
     </ul>
-
-    <p><strong>Problemas?</strong> Visite a página de <a href="support.html">Suporte</a> para assistência.</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Bullcord - Todos os direitos reservados.</p>
   </footer>
-
-
-
 </body>
 
 </html>

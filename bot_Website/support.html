@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-
-
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bullcord - Suporte</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -24,46 +22,32 @@
     </ul>
   </nav>
 
-  <header>
-    <h1>Suporte do Bullcord</h1>
-    <p>Entre em contato ou encontre ajuda aqui.</p>
+  <header class="hero">
+    <h1>Suporte Bullcord</h1>
   </header>
 
   <section class="content">
     <h2>Como Obter Ajuda</h2>
-    <p>Se você tiver problemas com o Bullcord, siga estas opções:</p>
     <ul>
-      <li><strong>Comunidade no Discord:</strong> Junte-se ao nosso servidor oficial (link a ser adicionado).</li>
-      <li><strong>E-mail de Suporte:</strong> Envie suas dúvidas para <a href="mailto:suporte@bullcord.com">suporte@bullcord.com</a>.</li>
-      <li><strong>Documentação:</strong> Confira o tutorial na página de <a href="tutorial.html">Tutorial</a>.</li>
+      <li>Comunidade no Discord (link a ser adicionado).</li>
+      <li>E-mail: <a href="mailto:suporte@bullcord.com">suporte@bullcord.com</a>.</li>
+      <li>Tutorial: <a href="tutorial.html">Tutorial</a>.</li>
     </ul>
-    <p><strong>Horário de Suporte:</strong> Respondemos de segunda a sexta, 09:00-21:00 (horário de Brasília).</p>
+    <h2>Entre em Contato</h2>
+    <form id="support-form">
+      <label for="name">Nome:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Mensagem:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-    <section class="content">
-      <h2>Entre em Contato</h2>
-      <form id="support-form">
-        <label for="name">Nome:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Mensagem:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        <button type="submit">Enviar</button>
-      </form>
-
-    </section>
-
-
-
-
-
-    <footer>
-      <p>&copy; 2025 Bullcord - Todos os direitos reservados.</p>
-    </footer>
-
-
-
-
+  <footer>
+    <p>&copy; 2025 Bullcord - Todos os direitos reservados.</p>
+  </footer>
 </body>
 
 </html>
