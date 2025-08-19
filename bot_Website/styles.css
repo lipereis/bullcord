@@ -392,3 +392,13 @@ footer p {
     transform: rotate(360deg);
   }
 }
+
+footer p a {
+  color: #8a2be2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #00d4ff;
+}
